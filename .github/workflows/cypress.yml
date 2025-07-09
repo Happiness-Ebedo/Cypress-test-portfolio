@@ -9,7 +9,6 @@ on:
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
 
     steps:
       - name: Checkout code
@@ -24,11 +23,11 @@ jobs:
         run: npm install
 
       - name: Verify Cypress install
-      run: npx cypress verify
+        run: npx cypress verify
 
       - name: Fix Cypress binary permissions
         run: chmod +x node_modules/.bin/cypress
-      
+
       - name: Run Cypress tests
         run: npx cypress run
 
