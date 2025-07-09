@@ -21,5 +21,5 @@ jobs:
       - name: Start app and run Cypress
         uses: cypress-io/github-action@v6
         with:
-          wait-on: 'https://example.com'     
+          wait-on: 'https://www.saucedemo.com'     
           wait-on-timeout: 60  
